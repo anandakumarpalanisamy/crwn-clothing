@@ -30,3 +30,8 @@ export const selectIsCollectionFetching = createSelector(
     [selectShop],
     shop => shop.isFetching
 );
+
+export const selectIscollectionsLoaded = createSelector(
+    [selectShop],
+    shop => !!shop.collections
+)
